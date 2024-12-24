@@ -156,9 +156,6 @@ if __name__ == "__main__":
             data[t, 0, d, :] = p
             data[t, 1, d, :] = s
 
-        # print(data[t,0,:,:])
-        # print(data[t,0,:,:])
-
     np.save('../data/1_min_data.npy', data)
 
     data = np.load('../data/1_min_data.npy')

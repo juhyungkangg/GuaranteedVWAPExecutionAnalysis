@@ -14,10 +14,6 @@ class functionalForm(object):
         multi_index = pd.MultiIndex.from_product([self.ticker_key, self.dates], names=['ticker', 'date'])
         self.df = pd.DataFrame(index=multi_index, columns=['liquidity', 'E', 'V', 'volume_proportion_error', 'total_volume_error'])
 
-        # df = pd.read_csv('../data/functional_form.csv')
-        # df.set_index(['ticker', 'date'], inplace=True)
-        #
-        # self.df = df
 
         self.lmbda = 10 ** (-6)
         kappa_df = pd.read_csv('../data/fixed_kappa.csv')

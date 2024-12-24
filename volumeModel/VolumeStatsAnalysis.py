@@ -90,17 +90,6 @@ if __name__ == "__main__":
     # Plot the volumes
     tickers = vsa.filtered_ticker_dates_dict.keys()
 
-    # for ticker in tickers:
-    #     loaded_array = np.load(f'../data/volumes/{ticker}_volume.npy')
-    #     volume_model = np.mean(loaded_array, axis=0)
-    #
-    #     plt.plot(volume_model/np.sum(volume_model))
-    #
-    # plt.title('Volume Proportion Plot')
-    # plt.xlabel('Time')
-    # plt.ylabel('Volume Proportion')
-    # plt.savefig('../data/volumes.png')
-
 
     # Total Volume estimation via lagging total volumes
     y = []

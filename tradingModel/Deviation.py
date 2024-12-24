@@ -12,9 +12,6 @@ class Deviation(object):
         self.ticker_idx = np.argwhere(self.tickers == ticker)[0][0]
         self.date_idx = np.argwhere(self.dates == date)[0][0]
 
-        # print(self.ticker_idx)
-        # print(self.date_idx)
-
     def calc_deviation(self, beta, mode=None):
         # Load price, size, timestamp
         data = np.load('../data/1_min_data.npy')

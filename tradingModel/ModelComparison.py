@@ -8,6 +8,7 @@ if __name__ == "__main__":
 
     val = -(df['opt_beta'] - df['fixed_kappa']) / df['fixed_kappa']
 
+    # Plot Stochastic Kappa
     plt.figure(figsize=(12, 8))
     plt.title("Improvement by Stochastic Kappa")
     plt.bar(df.index, val)

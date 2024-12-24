@@ -93,16 +93,6 @@ class TradingStatsAnalysis(object):
         self.stats_df.to_csv(f'../data/{title}.csv')
 
 if __name__ == "__main__":
-    # tsa = TradingStatsAnalysis()
-    # tsa.train_test()
-    # dates = tsa.train_dates
-    # tsa.fixed_kappa(dates)
-    # tsa.no_adjustment(dates)
-    # tsa.optimized_beta(dates)
-    # tsa.save("train_stats")
-    #
-    # print(tsa.stats_df)
-
     df = pd.read_csv('../data/stats_df.csv')
     df.set_index(df.columns[0], inplace=True)
 

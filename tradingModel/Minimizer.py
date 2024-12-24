@@ -36,8 +36,6 @@ class Minimizer:
             mean = np.mean(deviation)
             std = np.std(deviation)
 
-            # f.write(f"{ticker}, {beta}, {mean}, {std}\n")
-            # print(f"{ticker}, {beta}, {mean}, {std}")
 
             return mean + lmbda * std
 
